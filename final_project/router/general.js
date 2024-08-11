@@ -13,6 +13,10 @@ public_users.post("/register", (req,res) => {
 // Get the book list available in the shop
 public_users.get('/',function (req, res) {
   //Write your code here
+  /*AQUI EMPIEZA MI CODIGO*/
+      // Send JSON response with formatted friends data
+      res.send(JSON.stringify(booksdb,null,4));
+  /*AQUI TERMINA MI CODIGO*/
   return res.status(300).json({message: "Yet to be implemented"});
 });
 
